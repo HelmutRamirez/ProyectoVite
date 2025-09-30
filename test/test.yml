@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:3001"
+  phases:
+    - duration: 60
+      arrivalRate: 1000   # 1000 nuevos por segundo
+      maxVusers: 10000    # mantiene hasta 10 000 usuarios activos
+scenarios:
+  - flow:
+    - post:
+        url: "/registro"
+        json:
+          nombre: "UsuarioTest"
+          correo: "test@example.com"
+          contraseña: "123456"
+
