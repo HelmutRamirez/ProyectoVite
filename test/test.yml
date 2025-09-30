@@ -1,9 +1,8 @@
 config:
   target: "http://localhost:3001"
   phases:
-    - duration: 60
-      arrivalRate: 1000   # 1000 nuevos por segundo
-      maxVusers: 10000    # mantiene hasta 10 000 usuarios activos
+    - arrivalCount: 10000   # crea exactamente 10 000 usuarios en total
+      duration: 60          # los reparte en 60 segundos
 scenarios:
   - flow:
     - post:
