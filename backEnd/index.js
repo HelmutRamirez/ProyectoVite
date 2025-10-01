@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require("express"); //usamos codigo expres para recibir los datos del fron con vanilla
 const cors = require("cors");
 
 const app = express();
@@ -14,5 +14,5 @@ app.post("/registro", (req, res) => {
 
 // Servidor en puerto 3001
 app.listen(3001, () => {
-  console.log("Backend corriendo en http://localhost:3001");
+  console.log("puerto de api http://localhost:3001");
 });
