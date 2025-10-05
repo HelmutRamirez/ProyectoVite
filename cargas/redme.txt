@@ -1,0 +1,6 @@
+Comandos del proyecto
+
+Ejecutar la prueba de estrés desde bash: k6 run --out web-dashboard test.js
+Ejecutar el proyecto desde vsc: npm run dev
+Aplicar el pm2 para la prueba: pm2 start src/server.js -i max
+Detener el pm2:  pm2 stop src/server.js
